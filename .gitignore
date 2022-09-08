@@ -1,0 +1,15 @@
+*.iws
+*.ipr
+*.iml
+.idea
+build
+webapp/WEB-INF/lib
+ivy-lib
+out
+/build-eclipse/
+node_modules
+npm-debug.log
+.gradle
+/condition-builder-ui/dist
+/condition-builder-ui/node_modules
+classes
