@@ -5,15 +5,13 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <package
-            name="login"
-            namespace="/"
-            extends="struts-default">
-        <action
-                name="login"
-                class="lk.icoder.action.LoginAction">
+    <package name="login" namespace="/" extends="struts-default">
+
+        <action name="login" class="lk.icoder.action.LoginAction">
             <result name="success">/search-form.jsp</result>
             <result name="login">/login.jsp</result>
+            <result name="input">/login.jsp</result>
         </action>
+
     </package>
 </struts>

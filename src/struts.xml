@@ -24,11 +24,18 @@
             namespace="/tutorials"
             extends="struts-default">
         <action
-                name="getTutorial"
-                class="lk.icoder.action.TutorialAction">
+                name="*Tutorial"
+                class="lk.icoder.action.TutorialAction" method="{1}Tutorial">
             <result name="success">/success.jsp</result>
             <result name="failure">/error.jsp</result>
         </action>
+
+<!--        <action-->
+<!--                name="addTutorial"-->
+<!--                class="lk.icoder.action.TutorialAction" method="addTutorial">-->
+<!--            <result name="success">/success.jsp</result>-->
+<!--            <result name="failure">/error.jsp</result>-->
+<!--        </action>-->
     </package>
 
     <package

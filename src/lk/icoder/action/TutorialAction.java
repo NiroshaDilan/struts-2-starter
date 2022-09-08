@@ -7,12 +7,30 @@ public class TutorialAction {
     private String theBestTutorialWebSite;
     private String language;
 
-    public String execute() {
-        TutorialFinderService tutorialFinderService = new TutorialFinderService();
-        setTheBestTutorialWebSite(tutorialFinderService.getTheBestTutorialWebSite(language));
+    public String getTutorial() {
+//        TutorialFinderService tutorialFinderService = new TutorialFinderService();
+//        setTheBestTutorialWebSite(tutorialFinderService.getTheBestTutorialWebSite(language));
 //        setTheBestTutorialWebSite(getLanguage());
 //        System.out.printf(getLanguage());
-//        System.out.println(getLanguage());
+        System.out.println("getTutorial method called");
+        setTheBestTutorialWebSite("getTutorial method called");
+        return "success";
+    }
+
+    public String addTutorial() {
+        System.out.println("addTutorial method called");
+        setTheBestTutorialWebSite("addTutorial method called");
+        return "success";
+    }
+
+    public String updateTutorial() {
+        System.out.println("updateTutorial method called");
+        setTheBestTutorialWebSite("updateTutorial method called");
+        return "success";
+    }
+
+    public String someOtherMethod() {
+        System.out.println("Some other method executed");
         return "success";
     }
 
